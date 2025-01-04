@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-thumb {
+  width: 0.5em;
+  background: #0e2c30;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0e2f30;
+}
+::-webkit-scrollbar-track {
+  background-color: #0e2f3061;
+}
+.image-grid {
+  padding: 12px;
+}
+
+.image-row {
+  display: flex;
+}
+
+.image-row .image {
+  margin: 12px;
+  height: 240px;
+}
+
+.image {
+  border-radius: 14px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15),
+    0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.image-01 {
+  background-image: url("https://img.freepik.com/premium-photo/image-ancient-artifacts-relics-related-early-new-year-festivities-hd-ancient-artifact_1099471-4247.jpg");
+  flex: 1;
+}
+
+.image-02 {
+  background-image: url("https://img.freepik.com/premium-photo/artifacts-from-ancient-egypt-displayed-grand-exhibit_1079150-257150.jpg");
+  flex: 1;
+}
+
+.image-03 {
+  background-image: url("https://img2.chinadaily.com.cn/images/202109/22/614af63fa310cdd3d80ebcb7.png");
+  flex: 2;
+}
+
+.image-04 {
+  background-image: url("https://img.freepik.com/premium-photo/closeup-museums-display-cultural-artifacts-related-ancient-civilizations_1314467-58017.jpg?w=360");
+  flex: 1;
+}
+
+.image-05 {
+  background-image: url("https://images.ctfassets.net/cnu0m8re1exe/1sQ6sM77cCEqhr3M1ryLAD/3e0609f58199c35aab3c51c967dcc4d6/shutterstock_1065318299__1_.jpg");
+  flex: 2;
+}
+
+.image-06 {
+  background-image: url("https://artincontext.org/wp-content/uploads/2022/10/Artifacts-Related-to-Animals.jpg");
+  flex: 2;
+}
+
+.image-07 {
+  background-image: url("https://rarehistoricalphotos.com/wp-content/uploads/2024/03/ancient-artifacts-photos-05.webp");
+  flex: 1;
+}
+
+.image-08 {
+  background-image: url("https://rarehistoricalphotos.com/wp-content/uploads/2024/03/ancient-artifacts-photos-05.webp");
+  flex: 3;
+}
+
+@media screen and (max-width: 700px) {
+  .image-row {
+    flex-direction: column;
+  }
+
+  .image-row .image {
+    flex-basis: auto;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .image-row .image {
+    flex: 1;
+  }
+}
